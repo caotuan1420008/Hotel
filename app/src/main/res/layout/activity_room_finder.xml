@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.an.hotelservice.Room.RoomFinder">
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-197dp"
+        android:text="Internet" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/dateTO"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="22dp"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/checkBox3"
+        android:layout_marginTop="54dp"
+        android:entries="@array/location_arrays"
+        android:prompt="@string/location_prompt" />
+
+
+    <TextView
+        android:id="@+id/lblBuilding"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/checkBox3"
+        android:layout_marginTop="26dp"
+        android:text="@string/building_name" />
+
+    <EditText
+        android:id="@+id/dateFrom"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/checkBox3"
+        android:layout_marginTop="132dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="From"
+        android:inputType="none|date" />
+
+    <EditText
+        android:id="@+id/dateTO"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/dateFrom"
+        android:layout_marginEnd="23dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="To"
+        android:inputType="none|date" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="197dp"
+        android:text="Điều hòa" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/checkBox3"
+        android:layout_marginTop="205dp"
+        android:text="Số giường nằm" />
+
+    <Spinner
+        android:id="@+id/spinnerBed"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/checkBox3"
+        android:layout_marginTop="231dp"
+        android:entries="@array/bed_arrays"
+        android:prompt="@string/bed_prompt" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="99dp"
+        android:text="Thời gian đặt phòng:" />
+
+</RelativeLayout>
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgservice"
+    >
+
+    <Button
+        android:id="@+id/btnRoomService"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="159dp"
+        android:background="@drawable/white_rounded_corners"
+        android:text="Dịch vụ phòng" />
+
+    <Button
+        android:id="@+id/btnPaid"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/white_rounded_corners"
+        android:text="Tổng chi phí" />
+
+    <Button
+        android:id="@+id/btnChat"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/white_rounded_corners"
+        android:text="Hỗ trợ trực tiếp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="364dp"
+        android:layout_height="216dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/logoservice" />
+
+
+</RelativeLayout>
